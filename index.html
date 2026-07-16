@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shivani Sakri — Air cushion vehicle dynamics</title>
+<meta name="description" content="Aerospace Ph.D. candidate at Virginia Tech working on the nonlinear dynamics and stability of single-propeller air cushion vehicles. Physics-based modeling, CFD, and field-test validation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="rail">
+  <div class="rail-in">
+    <a class="rail-name" href="index.html">Shivani Sakri</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#dissertation">Dissertation</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Ph.D. Candidate &middot; Aerospace Engineering &middot; Virginia Tech</p>
+      <h1>Shivani Sakri</h1>
+      <p class="hero-lede">I build physics-based models of vehicles that fly, float, and hover &mdash; then take them to the field and <em>find out where the model is wrong.</em></p>
+      <div class="links">
+        <a class="btn btn-solid" href="#dissertation">See the work</a>
+        <a class="btn" href="mailto:ssakri@vt.edu">ssakri@vt.edu</a>
+        <a class="btn" href="https://linkedin.com/in/shivanisakri">LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         HERO MEDIA — swap in your own hovercraft photo.
+         Easiest way: upload your photo named exactly  img/hovercraft-hero.jpg
+         and it replaces the placeholder with zero code changes.
+
+         WANT A VIDEO INSTEAD? Delete the <img> line below, uncomment the
+         <video> block, and upload  img/hovercraft.mp4  (keep it under ~10 MB;
+         GitHub Pages is not a video host). The poster image shows before play.
+         =================================================================== -->
+    <figure class="media-frame">
+
+      <img class="media" src="img/hovercraft-hero.jpg" width="1600" height="1000"
+           alt="Prototype single-propeller hovercraft during a field test">
+
+      <!--
+      <video class="media" controls playsinline muted loop
+             poster="img/hovercraft-hero.jpg">
+        <source src="img/hovercraft.mp4" type="video/mp4">
+        Your browser can't play this video.
+      </video>
+      -->
+
+      <figcaption class="cap">
+        <b>Fig. 1</b> &mdash; The prototype single-propeller air cushion vehicle on the test
+        slope. Replace this caption with what's actually in your photo: where it was
+        shot, what run it was, and what you were trying to measure.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ ABOUT (always open) ============ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">About</p>
+      <h2>Where the air meets the water</h2>
+    </div>
+
+    <div class="diss-grid">
+      <div>
+        <p>I'm an Aerospace Engineering Ph.D. candidate at Virginia Tech, with a concurrent M.S. in Ocean Engineering &mdash; a combination that sounds odd until you look at what I work on. Air cushion vehicles, seagliders, and hydrofoils all live at the interface between air and water, and they punish you for treating either one as an afterthought.</p>
+        <p>My research is on the nonlinear dynamics and stability of single-propeller air cushion vehicles, in the VT iShip Lab at the Center for Marine Autonomy and Robotics, advised by Prof. Stefano Brizzolara and funded by the Office of Naval Research. Day to day that means Simulink models, Star-CCM+ runs, a ROS data-acquisition system on a prototype, and field tests that regularly tell me I was wrong about something.</p>
+        <p>What I've come to care about is the loop between the two: a model that never meets hardware is a hypothesis, and test data with no model behind it is just a spreadsheet. The work I want to keep doing is the part in the middle &mdash; designing the test that isolates the error, finding the parameter that was lying, and closing the gap.</p>
+        <p>Before this I did an M.S. at Michigan and a mechanical engineering degree in Pune. I'm currently finishing my Ph.D. and looking for flight test, simulation, and vehicle-physics roles.</p>
+      </div>
+
+      <aside class="sidebar">
+        <h4>Education</h4>
+        <dl class="spec">
+          <dt>2021 – now</dt><dd>Ph.D., Aerospace Engineering — Virginia Tech (GPA 3.55)</dd>
+          <dt>exp. 2026</dt><dd>M.S., Ocean Engineering — Virginia Tech (concurrent)</dd>
+          <dt>2018 – 20</dt><dd>M.S., Aerospace Engineering — University of Michigan (GPA 3.3)</dd>
+          <dt>2012 – 18</dt><dd>B.E., Mechanical Engineering — Savitribai Phule Pune University (Distinction)</dd>
+        </dl>
+        <p class="cap" style="margin-top:1rem">
+          Coursework: aerodynamics, flight dynamics, CFD, vehicle dynamics, numerical optimization.
+        </p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     EXPANDING PANELS
+     Each <details> is one section. Click the title to open or close.
+     Add  open  to a <details ...> tag if you want it expanded by
+     default, e.g.  <details class="panel" id="projects" open>
+     =================================================================== -->
+<div class="wrap">
+  <div class="accordion">
+
+    <!-- ---------- DISSERTATION ---------- -->
+    <details class="panel" id="dissertation">
+      <summary>
+        <h2 class="panel-title">Dissertation</h2>
+        <span class="panel-note">ONR · 5-DOF Simulink · Star-CCM+ · field test</span>
+        <span class="panel-mark" aria-hidden="true"></span>
+      </summary>
+      <div class="panel-body">
+        <p class="panel-intro"><b>Nonlinear Dynamics and Stability of Single-Propeller Air Cushion Vehicles.</b></p>
+
+        <div class="diss-grid">
+          <div>
+            <p>An air cushion vehicle on a slope is an underactuated, strongly nonlinear system. The skirt deforms, the cushion vents, the propeller wash shifts with trim, and each of those couples straight back into the others. Add a single propeller doing both lift and thrust and you lose the control authority that would let you sidestep the coupling. The program asks a concrete question &mdash; can such a vehicle climb a 35&deg; grade under control? &mdash; and my work is the whole chain from that question to a defensible answer.</p>
+
+            <ul>
+              <li><b>Model.</b> An integrated 5-DOF vehicle-dynamics model in Simulink/MATLAB coupling aerodynamic forces, propulsion airflow, and skirt&ndash;ground interaction. It's the tool behind every stability, control, and performance trade study on the program, and it predicts the vehicle's maneuverability rather than just its steady state.</li>
+              <li><b>CFD.</b> External-flow analysis in Star-CCM+, end to end &mdash; geometry prep, meshing, solver setup, post-processing &mdash; to extract the aerodynamic parameters that feed the Simulink model instead of guessing at them.</li>
+              <li><b>Trade studies.</b> Sensitivity studies relating skirt geometry, airflow rate, and trim to climb performance and stability margins. Results drove real subsystem design decisions and were presented at program design reviews to ONR.</li>
+              <li><b>Experiment.</b> I direct the field testing: designed and integrated an end-to-end data acquisition system in ROS, wrote the C++ that processes telemetry off it, and ran static and dynamic tests to validate the theoretical model and calibrate its dynamic coefficients.</li>
+            </ul>
+
+            <p>The interesting part is never the run that matches. It's the run that doesn't, and the week spent working out whether the fault is in the skirt model, the inflow assumption, or the sensor. Two papers have come out of this so far &mdash; the experimental validation work at OCEANS 2024 and the maneuvering and control simulations at SNAME FAST 2025.</p>
+          </div>
+
+          <aside class="sidebar">
+            <h4>Program</h4>
+            <dl class="spec">
+              <dt>Role</dt><dd>Lead engineer</dd>
+              <dt>Lab</dt><dd>VT iShip Lab, Center for Marine Autonomy &amp; Robotics</dd>
+              <dt>Advisor</dt><dd>Prof. Stefano Brizzolara</dd>
+              <dt>Sponsor</dt><dd>Office of Naval Research</dd>
+              <dt>Dates</dt><dd>Aug 2021 – present</dd>
+              <dt>Stack</dt><dd>Simulink, MATLAB, Star-CCM+, ROS, C++, Python</dd>
+              <dt>Status</dt><dd class="live">Active</dd>
+            </dl>
+          </aside>
+        </div>
+
+        <!-- =================================================================
+             DISSERTATION FIGURES — upload your own images with these exact
+             filenames and they'll drop straight in:
+               img/dissertation-01.jpg
+               img/dissertation-02.jpg
+               img/dissertation-03.jpg
+             Add a fourth by copying one <figure> block. Rewrite every caption.
+             ================================================================= -->
+        <div class="figstrip">
+          <figure>
+            <img class="media" src="img/dissertation-01.jpg" alt="The prototype hovercraft">
+            <figcaption class="cap"><b>Fig. 2</b> &mdash; Caption me: what the prototype is and what's notable about the skirt or lift system.</figcaption>
+          </figure>
+          <figure>
+            <img class="media" src="img/dissertation-02.jpg" alt="Field test on the slope">
+            <figcaption class="cap"><b>Fig. 3</b> &mdash; Caption me: a field test. Which slope, which run, what was being measured.</figcaption>
+          </figure>
+          <figure>
+            <img class="media" src="img/dissertation-03.jpg" alt="Model prediction compared against measured test data">
+            <figcaption class="cap"><b>Fig. 4</b> &mdash; Caption me: model vs. test. This is the most valuable figure on the page &mdash; make it a real plot.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </details>
+
+    <!-- ---------- EXPERIENCE ---------- -->
+    <details class="panel" id="experience">
+      <summary>
+        <h2 class="panel-title">Experience</h2>
+        <span class="panel-note">Regent Craft · Summer 2025</span>
+        <span class="panel-mark" aria-hidden="true"></span>
+      </summary>
+      <div class="panel-body">
+        <p class="panel-intro"><b>Performance analysis for a full-scale seaglider.</b></p>
+
+        <div class="diss-grid">
+          <div>
+            <p>A seaglider spends its life in three regimes &mdash; hull-borne, foil-borne, and flying in ground effect &mdash; so the usual performance metrics from either aircraft or boats only half apply. There was no established evaluation framework for the vehicle class, so much of the summer was deciding what "performance" even meant before measuring it.</p>
+            <ul>
+              <li>Built the foundational Python performance-analysis codebase: ingest raw flight and sea-trial telemetry, compute aero/hydrodynamic coefficients, generate performance-envelope diagnostics.</li>
+              <li>Analyzed flight-test data, identified sources of model error, and updated the vehicle physics model.</li>
+              <li>Calibrated coupled aero/hydrodynamic physics-based models against Hardware-in-the-Loop and sea-trial data.</li>
+              <li>Designed validation tests that isolate specific dynamic-model error modes, so a discrepancy points at one parameter instead of ten.</li>
+              <li>Delivered automated post-processing tools bridging HIL simulation output and real-world telemetry.</li>
+            </ul>
+            <p>This is the project that convinced me I want to work where the simulation team and the test team argue with each other in person.</p>
+          </div>
+
+          <aside class="sidebar">
+            <h4>Placement</h4>
+            <dl class="spec">
+              <dt>Role</dt><dd>Performance engineering intern</dd>
+              <dt>Org</dt><dd>Regent Craft</dd>
+              <dt>Vehicle</dt><dd>Full-scale hybrid seaglider</dd>
+              <dt>Dates</dt><dd>Summer 2025</dd>
+              <dt>Stack</dt><dd>Python (NumPy, pandas, matplotlib), HIL rig, sea-trial telemetry</dd>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </details>
+
+    <!-- ---------- PROJECTS ---------- -->
+    <details class="panel" id="projects">
+      <summary>
+        <h2 class="panel-title">Projects</h2>
+        <span class="panel-note">Hoverski · robots · hydrofoil</span>
+        <span class="panel-mark" aria-hidden="true"></span>
+      </summary>
+      <div class="panel-body">
+        <p class="panel-intro">Work outside the dissertation &mdash; some hands-on, some advisory, all of it on the same loop: model it, build it, test it, find out what the model missed.</p>
+
+        <div class="cards">
+
+          <article class="card">
+            <p class="card-tag">Design &amp; build</p>
+            <h3>Hoverski — jetski to hovercraft</h3>
+            <p>A jetski already has a hull, a powerplant, and someone willing to sit on it. What it doesn't have is a cushion. This project adds one.</p>
+            <ul>
+              <li>Built a lift and cushion physics model in MATLAB/Simulink &mdash; cushion pressure, flow rate, skirt behavior &mdash; and used it to size the lift system before anything got cut.</li>
+              <li>Designed the flexible skirt and the lift system, carried through to the physical build.</li>
+              <li>Instrumented the craft for on-water validation against the model.</li>
+            </ul>
+            <dl class="spec">
+              <dt>Role</dt><dd>Design &amp; build lead</dd>
+              <dt>Stack</dt><dd>MATLAB/Simulink, fabrication, on-water instrumentation</dd>
+              <dt>Status</dt><dd class="live">In progress</dd>
+            </dl>
+          </article>
+
+          <article class="card">
+            <p class="card-tag">Undergraduate research · Published</p>
+            <h3>Wall-climbing robot</h3>
+            <p>A robot that climbs rough walls and terrain for data collection, sampling, and surveillance &mdash; which mostly meant a long fight with suction adhesion on surfaces that refuse to be flat.</p>
+            <ul>
+              <li>Led the design and fabrication of both the structure and the climbing mechanism.</li>
+              <li>Wrote the Arduino control algorithm regulating the suction pump for smooth vertical motion.</li>
+              <li>Ran a test campaign across wall types to characterize where it held and where it let go.</li>
+            </ul>
+            <p style="font-size:.9rem">In hindsight it's the same problem I work on now: a flexible seal, a pressure difference, and a surface that won't cooperate.</p>
+            <dl class="spec">
+              <dt>Role</dt><dd>Undergraduate research assistant</dd>
+              <dt>Advisor</dt><dd>Dr. Jayesh Minase, SPPU</dd>
+              <dt>Stack</dt><dd>Arduino, mechanical design, fabrication</dd>
+              <dt>Output</dt><dd>Journal paper, 2018</dd>
+            </dl>
+          </article>
+
+          <article class="card">
+            <p class="card-tag">Undergraduate research</p>
+            <h3>Obstacle-detecting robot</h3>
+            <p>Designed and built a robot that navigates cluttered environments, detects obstacles in real time, and replans its path autonomously. Along the way I explored what light detection and ranging could realistically do for a small ground robot on an undergraduate budget.</p>
+            <dl class="spec">
+              <dt>Role</dt><dd>Undergraduate research assistant</dd>
+              <dt>Org</dt><dd>Sinhgad Institute of Technology, SPPU</dd>
+              <dt>Focus</dt><dd>Real-time obstacle detection, LiDAR sensing, path replanning</dd>
+            </dl>
+          </article>
+
+          <article class="card">
+            <p class="card-tag">Advisory</p>
+            <h3>Hydrofoil craft performance model</h3>
+            <p>An ONR project in the lab that I'm supporting rather than leading. I advise on the physics-based 2-DOF hydrodynamic performance model &mdash; how to formulate it, how to keep the parameters physically interpretable, and how to structure the MATLAB simulator around it for dynamics and stability analysis. The modeling discipline is the same as the hovercraft work; the vehicle is foil-borne instead of cushion-borne.</p>
+            <dl class="spec">
+              <dt>Role</dt><dd>Advisory — 2-DOF model formulation</dd>
+              <dt>Sponsor</dt><dd>Office of Naval Research</dd>
+              <dt>Stack</dt><dd>MATLAB</dd>
+              <dt>Status</dt><dd class="live">Active</dd>
+            </dl>
+          </article>
+
+        </div>
+      </div>
+    </details>
+
+    <!-- ---------- PUBLICATIONS ---------- -->
+    <details class="panel" id="publications">
+      <summary>
+        <h2 class="panel-title">Publications</h2>
+        <span class="panel-note">4 papers · 2018–2025</span>
+        <span class="panel-mark" aria-hidden="true"></span>
+      </summary>
+      <div class="panel-body">
+
+        <div class="links" style="margin-bottom:1.8rem">
+          <a class="btn" href="https://orcid.org/0009-0003-0841-2878">ORCID · 0009-0003-0841-2878</a>
+        </div>
+
+        <ul class="pubs">
+          <li>
+            <div class="year">2025</div>
+            <div>
+              <p class="title">Maneuvering and Control Simulations of a Hovercraft</p>
+              <p class="venue">SNAME International Conference on Fast Sea Transportation (FAST)</p>
+              <p class="authors"><b>Sakri, S.</b>; Brizzolara, S.</p>
+            </div>
+          </li>
+          <li>
+            <div class="year">2024</div>
+            <div>
+              <p class="title">Experimental Validation of Dynamics for Air Cushion Vehicles</p>
+              <p class="venue">OCEANS 2024 — Halifax (IEEE)</p>
+              <p class="authors"><b>Sakri, S.</b>; Dim, M.; Brizzolara, S.</p>
+            </div>
+          </li>
+          <li>
+            <div class="year">2021</div>
+            <div>
+              <p class="title">Benefits of Utilizing Counseling Services Among Doctoral Women of Color in STEM</p>
+              <p class="venue">2021 ASEE Virtual Annual Conference</p>
+              <p class="authors">Grasty, K.; <b>Sakri, S.</b>; Arnold, A. C.; Bekki, J. M.; Wilkins-Yel, K. G.; Natarajan, M.; Bernstein, B. L.; Randall, A. K.</p>
+            </div>
+          </li>
+          <li>
+            <div class="year">2018</div>
+            <div>
+              <p class="title">Control of Dynamics and Development of a Wall Climbing Robot</p>
+              <p class="venue">Journal of Material Science and Mechanical Engineering, Vol. 5, Issue 2</p>
+              <p class="authors">Undergraduate research at Sinhgad Institute of Technology, SPPU</p>
+            </div>
+          </li>
+        </ul>
+
+        <p style="margin-top:1.6rem" class="mono">Dissertation in progress: Nonlinear Dynamics and Stability of Single-Propeller Air Cushion Vehicles</p>
+      </div>
+    </details>
+
+    <!-- ---------- SKILLS ---------- -->
+    <details class="panel" id="skills">
+      <summary>
+        <h2 class="panel-title">Skills</h2>
+        <span class="panel-note">MATLAB · Simulink · Python · ROS · Star-CCM+</span>
+        <span class="panel-mark" aria-hidden="true"></span>
+      </summary>
+      <div class="panel-body">
+        <div class="tools">
+          <div class="tool-group">
+            <h4>Modeling &amp; simulation</h4>
+            <ul>
+              <li>MATLAB / Simulink <span>— multi-DOF vehicle dynamics, daily driver</span></li>
+              <li>Physics-based model development</li>
+              <li>Numerical optimization</li>
+              <li>Sensitivity &amp; trade studies</li>
+              <li>Hardware-in-the-loop calibration</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h4>CFD &amp; geometry</h4>
+            <ul>
+              <li>Star-CCM+ (Siemens) <span>— end-to-end external flow</span></li>
+              <li>Ansys Fluent</li>
+              <li>HyperMesh</li>
+              <li>SolidWorks, AutoCAD</li>
+              <li>Geometry &rarr; mesh &rarr; solve &rarr; post-process</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h4>Code &amp; data</h4>
+            <ul>
+              <li>Python <span>— NumPy, pandas, matplotlib; automated post-processing pipelines</span></li>
+              <li>ROS <span>— field data acquisition on Linux</span></li>
+              <li>C++ <span>— telemetry processing for the DAQ pipeline</span></li>
+              <li>Flight &amp; sea-trial telemetry analysis</li>
+              <li>LaTeX</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ---------- ENGINEERING EDUCATION ---------- -->
+    <details class="panel" id="engineering-education">
+      <summary>
+        <h2 class="panel-title">Engineering education</h2>
+        <span class="panel-note">Extracurricular · ASU · Michigan · Virginia Tech</span>
+        <span class="panel-mark" aria-hidden="true"></span>
+      </summary>
+      <div class="panel-body">
+        <p class="panel-intro">Outside the lab I assist on engineering-education research: mixed-methods work on who stays in engineering and why. Different data, same instinct &mdash; measure the system honestly, then say what the measurement means.</p>
+
+        <div class="tools">
+          <div class="tool-group">
+            <h4>Arizona State · 2020–21</h4>
+            <ul>
+              <li>With Prof. Jennifer Bekki: assisted on qualitative and quantitative analysis of gender ratios in STEM and their effect on the retention of women doctoral students.</li>
+              <li>Helped build a conceptual framework for analyzing impostor syndrome in graduate women engineers.</li>
+              <li>Contributed to the ASEE paper on counseling-service use among doctoral women of color in STEM.</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h4>Michigan · 2019–20</h4>
+            <ul>
+              <li>With Prof. Cindy Finelli: assisted on a study of student resistance to active learning and persistent misconceptions in undergraduate engineering.</li>
+              <li>Ran focus groups, transcribed, and supported the qualitative analysis.</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h4>Virginia Tech · 2023</h4>
+            <ul>
+              <li>With Dr. Holly Matusovich, Center for Equity: assessed organizational structures across engineering departments.</li>
+              <li>Consolidated a shared resource pool to inform more equitable graduate-education policy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tools" style="margin-top:2rem">
+          <div class="tool-group">
+            <h4>Department service</h4>
+            <ul>
+              <li>President, AOE Graduate Student Assembly <span>— now Chief Advisor</span></li>
+              <li>Founder, Women in AOE <span>— support for women and non-binary students in the department</span></li>
+              <li>Treasurer, Graduate Engineering Alliance</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h4>Policy &amp; committees</h4>
+            <ul>
+              <li>Strategic Graduate Advisor, PROTEGE Collective <span>— equity of graduate education in engineering, under the Associate Dean</span></li>
+              <li>AOE Strategic Planning Committee</li>
+              <li>AOE Department DEI Recruitment Committee</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h4>Teaching</h4>
+            <ul>
+              <li>Teaching Assistant, Johns Hopkins University <span>— summer 2019, cohort of 30 students; tutoring, lectures, and hands-on mechanical and electrical lab activities</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+  </div>
+</div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <h2>Looking for my next vehicle</h2>
+    <p>I'm finishing my Ph.D. and looking for flight test, simulation, and vehicle-physics roles &mdash; ideally somewhere the model and the hardware are in the same building. If that sounds like your team, I'd like to hear about it.</p>
+    <div class="foot-links">
+      <a href="mailto:ssakri@vt.edu">ssakri@vt.edu</a>
+      <a href="https://linkedin.com/in/shivanisakri">linkedin.com/in/shivanisakri</a>
+      <a href="https://github.com/shivanisakri">github.com/shivanisakri</a>
+      <a href="https://orcid.org/0009-0003-0841-2878">ORCID</a>
+    </div>
+    <div class="foot-fine">
+      <span>Blacksburg, Virginia</span>
+      <span>Built by hand · Last updated July 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Opens the matching panel when a nav link is clicked, or when someone
+// lands on a URL like shivanisakri.github.io/#publications.
+// The panels open and close fine without this — it's only for links.
+(function () {
+  function reveal() {
+    var id = location.hash.slice(1);
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (!el) return;
+    var panel = el.closest('details');
+    if (panel) panel.open = true;
+    requestAnimationFrame(function () {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+  window.addEventListener('hashchange', reveal);
+  document.addEventListener('DOMContentLoaded', reveal);
+})();
+</script>
+
+</body>
+</html>
